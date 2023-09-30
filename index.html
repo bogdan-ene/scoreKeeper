@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="has-background-info">
+    <div class="container">
+        <div class="image-container">
+            <img src="assets/ping-pong.webp" alt="Ping Pong" />
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">Ping Pong Score Keeper</p>
+            </header>
+            <div class="card-content">
+                <p class="subtitle">Use the buttons below to keep the score for the game</p>
+                <h1 class="title is-1 has-text-centered"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+            </div>
+            <footer class="card-footer">
+                <button id="p1Button" class="button card-footer-item">+1 Player One</button>
+                <button id="p2Button" class="button card-footer-item">+1 Player Two</button>
+                <button id="reset" class="button card-footer-item">Reset</button>
+            </footer>
+            <div class="field has-addons has-addons-centered">
+                <div class="control">
+                    <div class="select is-rounded">
+                        <select id="playto" name="">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                            <option value="9">9</option>
+                            <option value="11">11</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info">Rounds</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
